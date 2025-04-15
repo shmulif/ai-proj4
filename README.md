@@ -1,3 +1,3 @@
 # Project 4: RL with Pig
 ### Sam Feld, Jay Salgado, Aban Khan, Matt Glennon
-### Our [Group Notion Page](https://www.notion.so/Grad-Project-1cb3b34792c480fca3c8f8d9eb63d62f?pvs=4)
+### Our [Group Notion Page](https://www.notion.so/AI-Project-4-1d03b34792c480f78ad4e5b40c7faa55?pvs=4)

@@ -12,7 +12,17 @@ def valueIterate():
             for j in range(GOAL): # j = OPPONENT SCORE
                 for k in range(GOAL-i): # k = TURN TOTAL SO FAR
                     oldProb = p[i][j][k]
-                    pFlip = (1.0 - pWin(j,i,0) + pWin(i,j,k+1)) / 2
+                    pFlip = (
+                        1.0
+                        - (1/6) * pWin(j, i, 0)
+                        + (1/6) * (
+                            pWin(i, j, k + 2)
+                            + pWin(i, j, k + 3)
+                            + pWin(i, j, k + 4)
+                            + pWin(i, j, k + 5)
+                            + pWin(i, j, k + 6)
+                        )
+                    )
                     pHold = 1.0 - pWin(j, i+k, 0)
                     p[i][j][k] = max(pFlip, pHold)
                     flip[i][j][k] = pFlip > pHold
