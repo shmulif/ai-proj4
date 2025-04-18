@@ -23,5 +23,3 @@ fig.update_layout(
 )
 
 fig.show()
- 
-fig.write_image("3d_surface.png", scale=2) 
