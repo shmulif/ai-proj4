@@ -50,7 +50,7 @@ def outputHoldValues():
 def writePToCSV(filename="probabilities.csv"):
     with open(filename, mode='w', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(["i", "j", "k", "p_value"])  # header
+        writer.writerow(["i", "j", "k", "probability"])  # header
         for i in range(GOAL):
             for j in range(GOAL):
                 for k in range(GOAL - i):
